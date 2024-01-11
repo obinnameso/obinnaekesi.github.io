@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>movie recommender project</title>
+		<title>language identification</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,7 +26,7 @@
 					<nav id="nav">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li class="active"><a href="generic.html">Movie recommender</a></li>
+							<li class="active"><a href="#">Language Identification</a></li>
 							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
 						</ul>
 						<ul class="icons">
@@ -44,15 +44,47 @@
 							<section class="post">
 								<header class="major">
 									<!-- <span class="date">April 25, 2017</span> -->
-									<h1>Movie Recommender<br />
-									System</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+									<h1>Language Identification<br />
+									Challenge</h1>
+									<!-- <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
 									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									amet nullam sed etiam veroeros.</p> -->
 								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<div class="image main"><img width="300" height="250" src="images\lang_hack_pic.png" alt="language classification" /></div>
+								<h2>Project Description</h2>
+								<p>Welcome to our project, Language as you know is an indispensable tool that can be used to deepen democracy and also contribute to the social, cultural, intellectual, economic and political life of the South African society.
+								This project aims to develop a language identification system that can accurately identify South African languages of a given text input. The system utilizes natural language processing (NLP) techniques to analyze text features and determine the most likely language.
+								<br>
+								<br>
+								South Africa is multilingual with 11 official languages, each of which is guaranteed equal status. Most South Africans are multilingual and able to speak at least two or more of the official languages.
+								With such a multilingual population, it is only obvious that our systems and devices also communicate in multi-languages.
+								In this project, we will take text which is in any of South Africa's 11 Official languages and identify which language the text is in.</p>
+								
+								<h2>Features</h2>
+								<p>Identifies the language of a given text input Supports any of South Africa's 11 Official languages Employs NLP techniques to analyze text features and determine language probabilities Provides a user-friendly interface for language identification.</p>
+
+								<h2>Tools Used</h2>
+								<ul>
+									<li>Python</li>
+									<li>Streamlit</li>
+									<li>nltk</li>
+									<li>Sklearn</li>
+									<li>Comet</li>
+									<li>GitHub</li>
+								</ul>
+								
+								<h2>Data</h2>
+								<p>The system requires a dataset of text samples labeled with their corresponding South African languages. The dataset covers diverse range of text genres and represent the linguistic diversity of South Africa.
+								<br>
+								The data used here contained equal samples of each language to enhance proper and balanced training of the model as seen in the graph below:</p>
+								
+								<img src="https://github.com/obinnameso/South-Africa-language-identification/blob/main/images/lang_dist.jpg?raw=true">
+								
+								<h2>Model</h2>
+								<p>Various models were tested but the Naive Bayes classifier performed better so the system employs the Naive Bayes classifier, which was trained on a labeled dataset of South African text samples. The model utilizes NLP techniques, such as n-gram analysis and character frequency distribution, to extract features from the text and make language predictions.</p>
+
+								<h2>Evaluation</h2>
+								<p>The system's performance was evaluated using metrics such as accuracy, precision, recall, and F1-score. These metrics assessed the system's ability to correctly identify the language of text samples.</p>
 							</section>
 
 					</div>

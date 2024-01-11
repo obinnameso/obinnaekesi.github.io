@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Twitter Sentiment Classification</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<!-- <a href="index.html" class="logo">Test 1</a> -->
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="#">Twitter Sentiment Classification</a></li>
+							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
+						</ul>
+						<ul class="icons">
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<!-- <span class="date">April 25, 2017</span> -->
+									<h1>Twitter Sentiment <br />
+									Classification</h1>
+									<!-- <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+									amet nullam sed etiam veroeros.</p> -->
+								</header>
+								<div class="image main"><img src="images\Sentiment-Analysis1-pic.webp" alt="" /></div>
+								<h2>Project Description</h2>
+								<p>In this project, we developed a sentiment analysis tool for climate-related tweets, enabling companies to gauge public perception of climate change by their tweets. By analyzing Twitter discussions, businesses can gain insights into how their products or services might be perceived in the context of climate sentiment.
+								We investigated various supervised machine learning models, including Logistic Regression, Support Vector Machine, Naive Bayes, and Random Forest, to identify the most effective classifier for predicting climate sentiment in tweets. We employed GridSearchCV to optimize the parameters of our chosen model.</p>
+								
+								<h2>Features</h2>
+								<p>This project uses a classification model to determine the sentiment of users' tweets which could either be Pro, Negative, News or Neutral. We also developed a web application using Streamlit for demonstration and easy interaction with our model. The web application was designed in a way that it will be able to take csv files and return the sentiments which would suit a use case for an organization seeking to get the sentiment analysis for a group of tweets.</p>
+
+								<h2>Tools Used</h2>
+								<ul>
+									<li>Python</li>
+									<li>Streamlit</li>
+									<li>nltk</li>
+									<li>Sklearn</li>
+									<li>Comet</li>
+									<li>GitHub</li>
+								</ul>
+
+								<h2>Result</h2>
+								<p>Having done a thorough EDA on the dataset, we visualized the amount of data we had on the given sentiments as shown in the chart below:</p>
+								<img src="https://github.com/obinnameso/twitter-climate-sentiment-classification/blob/main/images/sentiment_dist_pie_chart.png?raw=true">
+
+								<p>We also found the highest occuring words in the dataset as shown in the graph below:</p>
+								<img width="700" height="400" src="https://github.com/obinnameso/twitter-climate-sentiment-classification/blob/main/images/copy_highest_occuring_words.png?raw=true">
+
+								<p>Using GridSearchCV and Sklearn's pipeline class, we performed hyper parameter tunning on the Support Vector and Random forest classifiers. This allowed us to identify the best parameters for the vectorizer and the classifer as well. With an accuracy score of 0.718, our model performed fairly.</p>
+
+								<h2>Recommendation</h2>
+								<p>This project has shed light on public perceptions of climate change, providing valuable insights for businesses. By harnessing machine learning techniques, we were able to extract actionable insights that can guide companies' market research and strategic decisions. Here are key takeaways from this endeavor:</p>
+
+								<ol>
+									<li>Market Research Insights: This project offers valuable market research insights for businesses. By accurately classifying individuals' beliefs on climate change, companies gain access to a broad spectrum of consumer sentiment. This data can inform their marketing strategies, helping them develop products and services that align with customers' environmental concerns and increase their market share.</li>
+									<li>Competitive Advantage: Our project provides a competitive edge for companies in the growing market of environmentally friendly and sustainable products. By leveraging machine learning techniques, we help businesses stay ahead of their competitors by understanding consumer perceptions and preferences in real-time. This enables them to tailor their offerings, attracting a growing segment of environmentally conscious consumers.</li>
+									<li>Public Awareness and Concern: Our analysis reveals a significant portion of individuals expressing strong beliefs in climate change and its potential impacts. This heightened awareness underscores the urgency for businesses to incorporate sustainability and environmental consciousness into their offerings.</li>
+								</ol>
+
+								<h3>Note</h3>
+								<p>Twitter as at the time of writing is known as X.</p>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<!-- <section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section> -->
+						<!-- <section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>1234 Somewhere Road #87257<br />
+								Nashville, TN 00000-0000</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(000) 000-0000</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">info@untitled.tld</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section> -->
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="#">Obinna</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
